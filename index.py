@@ -27,4 +27,8 @@ class BankAccount:
     def add_interest(self):
         monthly_interest = self.balence * 0.00083
         self.balence += monthly_interest
-        
+
+    def print_statement(self):
+        print(f"Account name: {self.full_name}")
+        print(f"Account balence: {self.balence: .2f}")
+        print(f"Account number: {self.account_number}")
